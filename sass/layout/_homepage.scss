@@ -726,9 +726,8 @@
     }
   }
 }
-
 .footer {
-  width: 50%;
+  width: 100%;
   margin-top: -10px;
   margin-right: auto;
   margin-bottom: 6rem;
@@ -738,19 +737,65 @@
     margin-top: -2rem;
     margin-bottom: 0rem;
     display: flex;
+    place-content: space-between;
   }
 
-  &-logo {
+  &__right {
+    width: 50%;
+    align-self: center;
     @include respond(tab-port) {
-      width: 56%;
-      object-fit: contain;
+      width: 25%;
+    }
+    @include respond(tab-port) {
+      width: 40%;
+    }
+  }
+  &__left {
+    width: 60%;
+    height: 20rem;
+    margin-right: auto;
+    position: relative;
+    @include respond(mini-desktop) {
+      padding: 0 0rem 0rem 10rem;
+    }
+
+    @include respond(tab-port) {
+      display: flex;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+  &-logo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-30%, 0px);
+    @include respond(mini-desktop) {
+      left: 40%;
+    }
+
+    @include respond(tab-port) {
+      width: 80%;
+      align-self: center;
+      justify-self: center;
+      transform: translate(-30%, 0px);
+    }
+
+    @include respond(phone) {
+      bottom: 0%;
+      transform: translate(-30%, -60%);
     }
   }
 
   .smiley {
     @include respond(tab-port) {
-      width: 40%;
-      object-fit: contain;
+      display: block;
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      display: block;
+      width: 100%;
     }
   }
 }
