@@ -84,7 +84,7 @@
     }
     @include respond(phone-small) {
       line-height: 4rem;
-      font-size: 2.3rem;
+      font-size: 2rem;
     }
 
     &-right {
@@ -125,7 +125,7 @@
 
     @include respond(phone-small) {
       line-height: 4rem;
-      font-size: 2.3rem;
+      font-size: 2rem;
     }
   }
 }
