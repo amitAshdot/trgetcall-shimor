@@ -710,6 +710,7 @@
         @include respond(phone) {
           font-size: 2.2rem;
           margin-right: 2rem;
+          margin-right: 0;
         }
         &-mobile {
           @include respond(phone) {
