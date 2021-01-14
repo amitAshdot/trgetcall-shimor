@@ -75,7 +75,6 @@
     }
 
     @include respond(phone) {
-      // flex-direction: column;
       align-items: center;
       top: 10%;
       line-height: 5rem;
@@ -535,7 +534,6 @@
     }
 
     &-span {
-      //   transform: translateY(100%);
       opacity: 0;
       transition: all 0.5s;
       transition-delay: 0.5s;
@@ -666,7 +664,6 @@
       }
 
       &:nth-child(5) {
-        // display: none;
         @include respond(phone) {
           display: flex;
           flex-direction: column-reverse;

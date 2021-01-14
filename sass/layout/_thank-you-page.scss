@@ -79,20 +79,6 @@
         line-height: 4.3vw;
         overflow: hidden;
 
-        // @include respond(small-desktop) {
-        //   font-size: 8rem;
-        //   line-height: 8rem;
-        // }
-        // @include respond(tab-land) {
-        //   font-size: 8rem;
-        //   line-height: 8rem;
-        // }
-
-        // @include respond(mini-desktop) {
-        //   font-size: 8rem;
-        //   line-height: 8rem;
-        // }
-
         @include respond(tab-port) {
           font-size: 4rem;
           line-height: 5rem;
@@ -204,7 +190,6 @@
   }
   &-button {
     @include submitBasic($color-primary-dark);
-    // @include shine($color-primary-dark);
     font-size: 4.5vw;
     padding: 0rem 2rem;
     overflow: hidden;
