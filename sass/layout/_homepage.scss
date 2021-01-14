@@ -37,7 +37,7 @@
     font-size: 4rem;
     object-fit: cover;
     font-size: 4rem;
-    object-position: 50%;
+    object-position: 40%;
     height: 60rem;
   }
 
@@ -531,6 +531,7 @@
     @include respond(phone) {
       font-size: 3.5rem;
       align-self: center;
+      text-align: center;
     }
 
     &-span {
@@ -539,6 +540,13 @@
       transition: all 0.5s;
       transition-delay: 0.5s;
       will-change: transform opacity;
+
+      @include respond(phone) {
+        &::before {
+          content: "\A";
+          white-space: pre-line;
+        }
+      }
 
       &.is-visible {
         transform: translateY(0%);
